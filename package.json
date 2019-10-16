@@ -1,0 +1,77 @@
+{
+  "name": "janat08-eaglefx-widgets",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/janat08/janat08-eaglefx-widgets.git"
+  },
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "scripts": {
+    "preversion": "npm test && npm run build",
+    "version": "git commit -am \"Update version number\" && git checkout -b release && git add -f dist/",
+    "postpublish": "git push --tags && git checkout master && git branch -D release && git push",
+    "testee": "testee test.html --browsers firefox",
+    "test": "npm run jshint && npm run testee",
+    "jshint": "jshint ./*.js ./src/ --config",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "build": "node build.js",
+    "develop": "done-serve --static --develop --port 8080"
+  },
+  "main": "dist/cjs/janat08-eaglefx-widgets",
+  "browser": {
+    "transform": [
+      "cssify"
+    ]
+  },
+  "browserify": {
+    "transform": [
+      "cssify"
+    ]
+  },
+  "keywords": [
+    "",
+    "donejs-plugin"
+  ],
+  "steal": {
+    "main": "janat08-eaglefx-widgets",
+    "configDependencies": [
+      "live-reload"
+    ],
+    "npmIgnore": [
+      "testee",
+      "generator-donejs",
+      "donejs-cli",
+      "steal-tools"
+    ],
+    "plugins": [
+      "steal-less",
+      "steal-stache"
+    ],
+    "directories": {
+      "lib": "src"
+    }
+  },
+  "dependencies": {
+    "cssify": "^0.6.0",
+    "steal-less": "^1.2.2"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "steal": "^2.1.6",
+    "steal-qunit": "^1.0.1",
+    "steal-tools": "^2.0.9",
+    "testee": "^0.8.1",
+    "generator-donejs": "^3.0.0",
+    "donejs-cli": "^3.0.0-pre.5",
+    "done-serve": "^3.0.0"
+  },
+  "license": "MIT"
+}
