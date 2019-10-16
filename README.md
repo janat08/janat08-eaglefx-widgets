@@ -1,6 +1,6 @@
-# janat-08-eaglefx-widgets
+# janat08-eaglefx-widgets
 
-[![Build Status](https://travis-ci.org/janata08/janat-08-eaglefx-widgets.svg?branch=master)](https://travis-ci.org/janata08/janat-08-eaglefx-widgets)
+[![Build Status](https://travis-ci.org/janata08/janat08-eaglefx-widgets.svg?branch=master)](https://travis-ci.org/janata08/janat08-eaglefx-widgets)
 
 
 
@@ -11,16 +11,16 @@
 With StealJS, you can import this module directly in a template that is autorendered:
 
 ```js
-import plugin from 'janat-08-eaglefx-widgets';
+import plugin from 'janat08-eaglefx-widgets';
 ```
 
 ### CommonJS use
 
-Use `require` to load `janat-08-eaglefx-widgets` and everything else
-needed to create a template that uses `janat-08-eaglefx-widgets`:
+Use `require` to load `janat08-eaglefx-widgets` and everything else
+needed to create a template that uses `janat08-eaglefx-widgets`:
 
 ```js
-var plugin = require("janat-08-eaglefx-widgets");
+var plugin = require("janat08-eaglefx-widgets");
 ```
 
 ### Standalone use
@@ -28,5 +28,5 @@ var plugin = require("janat-08-eaglefx-widgets");
 Load the `global` version of the plugin:
 
 ```html
-<script src='./node_modules/janat-08-eaglefx-widgets/dist/global/janat-08-eaglefx-widgets.js'></script>
+<script src='./node_modules/janat08-eaglefx-widgets/dist/global/janat08-eaglefx-widgets.js'></script>
 ```

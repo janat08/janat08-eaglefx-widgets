@@ -1,5 +1,5 @@
-@page janat-08-eaglefx-widgets
+@page janat08-eaglefx-widgets
 
-# janat-08-eaglefx-widgets
+# janat08-eaglefx-widgets
 
 
